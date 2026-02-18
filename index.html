@@ -1,27 +1,26 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Paddock Media — photo & vidéo motorsport en Belgique. Portfolio, publications, demandes d’accréditation." />
-  <title>Paddock Media — Photo & Vidéo Motorsport (BE)</title>
+  <meta name="description" content="Paddock Media — motorsport photo & video in Belgium. Portfolio and media accreditation contact." />
+  <title>Paddock Media — Motorsport Photo & Video (BE)</title>
 
-  <meta property="og:title" content="Paddock Media — Photo & Vidéo Motorsport (BE)" />
-  <meta property="og:description" content="Portfolio, publications, demandes d’accréditation." />
+  <meta property="og:title" content="Paddock Media — Motorsport Photo & Video (BE)" />
+  <meta property="og:description" content="Portfolio and media accreditation contact." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://paddockmedia.be/" />
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <a class="skip" href="#main">Aller au contenu</a>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <header class="header">
+  <header class="header" id="top">
     <div class="container nav">
       <div class="brand">
-        <a href="#" class="brand__link" aria-label="Paddock Media">
+        <a href="#top" class="brand__link" aria-label="Paddock Media">
           <span class="brand__mark" aria-hidden="true">PM</span>
           <span class="brand__name">Paddock Media</span>
         </a>
@@ -29,232 +28,267 @@
 
       <nav class="menu" aria-label="Navigation">
         <a href="#portfolio">Portfolio</a>
-        <a href="#publications">Publications</a>
-        <a href="#accreditation">Accréditations</a>
+        <a href="#accreditation">Accreditation</a>
         <a href="#contact" class="btn btn--ghost">Contact</a>
       </nav>
 
-      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
 
     <div class="container hero">
-      <p class="kicker">Photo • Vidéo • Motorsport • Belgique</p>
-      <h1>Contenu piste & paddock, propre et safe.</h1>
+      <p class="kicker">Photo • Video • Motorsport • Belgium</p>
+      <h1>Trackside + paddock visuals. Clean, fast, and safe.</h1>
       <p class="lede">
-        Je couvre courses, rallyes et meetings en Belgique : action shots, ambiance, paddock et interviews.
-        Pour demandes média/partenariats, tout est ici.
+        Motorsport coverage in Belgium: action shots, paddock moments, atmosphere and short-form video.
+        For media access or partnerships, reach out below.
       </p>
 
       <div class="cta">
-        <a class="btn" href="#portfolio">Voir le portfolio</a>
-        <a class="btn btn--ghost" href="#accreditation">Demander une accréditation</a>
+        <a class="btn" href="#portfolio">View portfolio</a>
+        <a class="btn btn--ghost" href="#contact">Request access</a>
       </div>
 
-      <div class="stats" aria-label="Statistiques (à personnaliser)">
+      <div class="stats" aria-label="Stats (edit these)">
         <div class="stat">
-          <div class="stat__num" data-editable="true">+0</div>
-          <div class="stat__label">événements couverts</div>
+          <div class="stat__num" data-editable="true">0+</div>
+          <div class="stat__label">events covered</div>
         </div>
         <div class="stat">
-          <div class="stat__num" data-editable="true">0</div>
-          <div class="stat__label">photos livrées</div>
+          <div class="stat__num" data-editable="true">0+</div>
+          <div class="stat__label">photos delivered</div>
         </div>
         <div class="stat">
-          <div class="stat__num" data-editable="true">0</div>
-          <div class="stat__label">vues / mois</div>
+          <div class="stat__num" data-editable="true">0+</div>
+          <div class="stat__label">monthly views</div>
         </div>
       </div>
 
       <div class="badge-row">
-        <span class="badge">Spa • Zolder • Rallye</span>
-        <span class="badge">Publication sous 24–72h</span>
-        <span class="badge">Règles sécurité respectées</span>
+        <span class="badge">Spa • Zolder • Rally</span>
+        <span class="badge">Delivery 24–72h</span>
+        <span class="badge">Safety rules respected</span>
       </div>
     </div>
   </header>
 
   <main id="main">
+    <!-- PORTFOLIO -->
     <section class="section" id="portfolio">
       <div class="container">
         <div class="section__head">
           <h2>Portfolio</h2>
           <p class="muted">
-            Remplace ces images par tes meilleures (15–30 max). Priorité : net, action, variété (piste / paddock / ambiance).
+            Easy updates: just replace files inside <code>assets/</code> using the same names:
+            <code>portfolio-01.jpg</code> to <code>portfolio-24.jpg</code>. No code changes needed.
           </p>
         </div>
 
-        <div class="filters" role="tablist" aria-label="Filtres portfolio">
-          <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">Tout</button>
+        <div class="filters" role="tablist" aria-label="Portfolio filters">
+          <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
           <button class="chip" data-filter="circuit" role="tab" aria-selected="false">Circuit</button>
-          <button class="chip" data-filter="rallye" role="tab" aria-selected="false">Rallye</button>
+          <button class="chip" data-filter="rally" role="tab" aria-selected="false">Rally</button>
           <button class="chip" data-filter="paddock" role="tab" aria-selected="false">Paddock</button>
-          <button class="chip" data-filter="ambiance" role="tab" aria-selected="false">Ambiance</button>
+          <button class="chip" data-filter="atmosphere" role="tab" aria-selected="false">Atmosphere</button>
         </div>
 
-        <div class="grid" id="grid" aria-label="Galerie">
+        <div class="grid" id="grid" aria-label="Gallery">
+          <!-- Tip: you can edit captions, but you never have to. Replace images only. -->
+
           <figure class="card" data-tags="circuit">
-            <img loading="lazy" src="assets/portfolio-01.jpg" alt="Spa Francorchamps — ELMS 2022" />
-            <figcaption>Spa Francorchamps — ELMS 2022</figcaption>
+            <img loading="lazy" src="assets/portfolio-01.jpg" alt="Portfolio image 01" />
+            <figcaption>Image 01</figcaption>
           </figure>
 
           <figure class="card" data-tags="circuit">
-            <img loading="lazy" src="assets/portfolio-02.jpg" alt="Circuit — photo 02" />
-            <figcaption>Circuit — photo 02</figcaption>
+            <img loading="lazy" src="assets/portfolio-02.jpg" alt="Portfolio image 02" />
+            <figcaption>Image 02</figcaption>
           </figure>
 
-          <figure class="card" data-tags="rallye">
-            <img loading="lazy" src="assets/portfolio-03.jpg" alt="Rallye — photo 03" />
-            <figcaption>Rallye — photo 03</figcaption>
+          <figure class="card" data-tags="rally">
+            <img loading="lazy" src="assets/portfolio-03.jpg" alt="Portfolio image 03" />
+            <figcaption>Image 03</figcaption>
           </figure>
 
           <figure class="card" data-tags="paddock">
-            <img loading="lazy" src="assets/portfolio-04.jpg" alt="Paddock — photo 04" />
-            <figcaption>Paddock — photo 04</figcaption>
+            <img loading="lazy" src="assets/portfolio-04.jpg" alt="Portfolio image 04" />
+            <figcaption>Image 04</figcaption>
           </figure>
 
-          <figure class="card" data-tags="ambiance">
-            <img loading="lazy" src="assets/portfolio-05.jpg" alt="Ambiance — photo 05" />
-            <figcaption>Ambiance — photo 05</figcaption>
+          <figure class="card" data-tags="atmosphere">
+            <img loading="lazy" src="assets/portfolio-05.jpg" alt="Portfolio image 05" />
+            <figcaption>Image 05</figcaption>
           </figure>
 
           <figure class="card" data-tags="circuit paddock">
-            <img loading="lazy" src="assets/portfolio-06.jpg" alt="Mix — photo 06" />
-            <figcaption>Mix — photo 06</figcaption>
+            <img loading="lazy" src="assets/portfolio-06.jpg" alt="Portfolio image 06" />
+            <figcaption>Image 06</figcaption>
+          </figure>
+
+          <figure class="card" data-tags="circuit">
+            <img loading="lazy" src="assets/portfolio-07.jpg" alt="Portfolio image 07" />
+            <figcaption>Image 07</figcaption>
+          </figure>
+
+          <figure class="card" data-tags="rally">
+            <img loading="lazy" src="assets/portfolio-08.jpg" alt="Portfolio image 08" />
+            <figcaption>Image 08</figcaption>
+          </figure>
+
+          <figure class="card" data-tags="paddock">
+            <img loading="lazy" src="assets/portfolio-09.jpg" alt="Portfolio image 09" />
+            <figcaption>Image 09</figcaption>
+          </figure>
+
+          <figure class="card" data-tags="atmosphere">
+            <img loading="lazy" src="assets/portfolio-10.jpg" alt="Portfolio image 10" />
+            <figcaption>Image 10</figcaption>
+          </figure>
+
+          <figure class="card" data-tags="circuit">
+            <img loading="lazy" src="assets/portfolio-11.jpg" alt="Portfolio image 11" />
+            <figcaption>Image 11</figcaption>
+          </figure>
+
+          <figure class="card" data-tags="circuit">
+            <img loading="lazy" src="assets/portfolio-12.jpg" alt="Portfolio image 12" />
+            <figcaption>Image 12</figcaption>
+          </figure>
+
+          <figure class="card" data-tags="rally">
+            <img loading="lazy" src="assets/portfolio-13.jpg" alt="Portfolio image 13" />
+            <figcaption>Image 13</figcaption>
+          </figure>
+
+          <figure class="card" data-tags="paddock">
+            <img loading="lazy" src="assets/portfolio-14.jpg" alt="Portfolio image 14" />
+            <figcaption>Image 14</figcaption>
+          </figure>
+
+          <figure class="card" data-tags="atmosphere">
+            <img loading="lazy" src="assets/portfolio-15.jpg" alt="Portfolio image 15" />
+            <figcaption>Image 15</figcaption>
+          </figure>
+
+          <figure class="card" data-tags="circuit paddock">
+            <img loading="lazy" src="assets/portfolio-16.jpg" alt="Portfolio image 16" />
+            <figcaption>Image 16</figcaption>
+          </figure>
+
+          <figure class="card" data-tags="circuit">
+            <img loading="lazy" src="assets/portfolio-17.jpg" alt="Portfolio image 17" />
+            <figcaption>Image 17</figcaption>
+          </figure>
+
+          <figure class="card" data-tags="rally">
+            <img loading="lazy" src="assets/portfolio-18.jpg" alt="Portfolio image 18" />
+            <figcaption>Image 18</figcaption>
+          </figure>
+
+          <figure class="card" data-tags="paddock">
+            <img loading="lazy" src="assets/portfolio-19.jpg" alt="Portfolio image 19" />
+            <figcaption>Image 19</figcaption>
+          </figure>
+
+          <figure class="card" data-tags="atmosphere">
+            <img loading="lazy" src="assets/portfolio-20.jpg" alt="Portfolio image 20" />
+            <figcaption>Image 20</figcaption>
+          </figure>
+
+          <figure class="card" data-tags="circuit">
+            <img loading="lazy" src="assets/portfolio-21.jpg" alt="Portfolio image 21" />
+            <figcaption>Image 21</figcaption>
+          </figure>
+
+          <figure class="card" data-tags="circuit">
+            <img loading="lazy" src="assets/portfolio-22.jpg" alt="Portfolio image 22" />
+            <figcaption>Image 22</figcaption>
+          </figure>
+
+          <figure class="card" data-tags="rally">
+            <img loading="lazy" src="assets/portfolio-23.jpg" alt="Portfolio image 23" />
+            <figcaption>Image 23</figcaption>
+          </figure>
+
+          <figure class="card" data-tags="paddock atmosphere">
+            <img loading="lazy" src="assets/portfolio-24.jpg" alt="Portfolio image 24" />
+            <figcaption>Image 24</figcaption>
           </figure>
         </div>
 
         <div class="note">
-          <strong>Tip accréditation :</strong> garde une page “Best of” courte (les orgas scannent vite).
+          <strong>Pro tip:</strong> keep this page short (20–30 best images). Organizers scan fast.
         </div>
       </div>
     </section>
 
-    <section class="section section--alt" id="publications">
+    <!-- ACCREDITATION -->
+    <section class="section section--alt" id="accreditation">
       <div class="container">
         <div class="section__head">
-          <h2>Publications & liens</h2>
-          <p class="muted">Ajoute tes liens (Instagram/YouTube/TikTok, articles, albums, etc.).</p>
-        </div>
-
-        <div class="cols">
-          <div class="panel">
-            <h3>Réseaux</h3>
-            <ul class="list">
-              <li><a href="#" target="_blank" rel="noreferrer">Instagram — @paddockmedia (à remplacer)</a></li>
-              <li><a href="#" target="_blank" rel="noreferrer">YouTube — Paddock Media (à remplacer)</a></li>
-              <li><a href="#" target="_blank" rel="noreferrer">TikTok — @paddockmedia (à remplacer)</a></li>
-            </ul>
-          </div>
-
-          <div class="panel">
-            <h3>Dernières couvertures</h3>
-            <ul class="list">
-              <li>2026-__-__ — <span class="muted">Événement</span> — lien / album (à remplacer)</li>
-              <li>2026-__-__ — <span class="muted">Événement</span> — lien / album (à remplacer)</li>
-              <li>2026-__-__ — <span class="muted">Événement</span> — lien / album (à remplacer)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="accreditation">
-      <div class="container">
-        <div class="section__head">
-          <h2>Accréditations</h2>
+          <h2>Accreditation</h2>
           <p class="muted">
-            Copie/colle ce texte dans tes demandes. Remplis les éléments entre crochets.
+            Media coverage request (photo/video). I follow marshals’ instructions and all circuit/rally safety rules.
           </p>
         </div>
 
         <div class="cols">
           <div class="panel">
-            <h3>Pitch (site)</h3>
-            <p>
-              Paddock Media est un projet photo/vidéo dédié au sport automobile en Belgique (circuit, rallye, paddock).
-              Objectif : publier rapidement des images exploitables par les teams/organisateurs, dans le respect des règles de sécurité.
-            </p>
-            <div class="pillrow">
-              <span class="pill">Livraison 24–72h</span>
-              <span class="pill">Piste • Paddock • Portraits</span>
-              <span class="pill">BE</span>
-            </div>
+            <h3>What I deliver</h3>
+            <ul class="list">
+              <li>Track action + paddock coverage</li>
+              <li>Fast delivery (24–72h)</li>
+              <li>Web + social formats (vertical/horizontal)</li>
+              <li>Clean usage terms for teams/organizers (on request)</li>
+            </ul>
           </div>
 
           <div class="panel">
-            <h3>Email type</h3>
-            <pre class="template" aria-label="Email type"><code>Objet : Demande d’accréditation média — [ÉVÉNEMENT] — Paddock Media
-
-Bonjour,
-
-Je suis photographe/vidéaste et je souhaite couvrir [ÉVÉNEMENT] le [DATE] pour Paddock Media.
-Je produirai un reportage photo/vidéo (piste + paddock) publié sur nos canaux.
-
-Portfolio : https://paddockmedia.be/#portfolio
-Liens : [Instagram / YouTube / TikTok]
-Audience : [abonnés / vues moyennes]
-Matériel : [boîtier] + [objectifs]
-
-Je m’engage à respecter strictement les consignes de sécurité et les zones médias.
-
-Merci pour votre retour,
-[Nom] — [Téléphone]
-contact@paddockmedia.be</code></pre>
-
+            <h3>How to contact</h3>
+            <p class="muted">
+              Email is the fastest way. Include the event name + date, and the kind of access you offer (track/paddock).
+            </p>
             <div class="actions">
-              <button class="btn btn--small" id="copyEmail">Copier</button>
-              <a class="btn btn--small btn--ghost" href="assets/media-kit.pdf" target="_blank" rel="noreferrer">Ouvrir le Media Kit (PDF)</a>
+              <a class="btn" href="#contact">Contact</a>
+              <a class="btn btn--ghost" href="#portfolio">View portfolio</a>
             </div>
-            <p class="muted small">Astuce : un Media Kit d’une page augmente le taux de “oui”.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt" id="contact">
+    <!-- CONTACT -->
+    <section class="section" id="contact">
       <div class="container">
         <div class="section__head">
           <h2>Contact</h2>
-          <p class="muted">Pour accréditations, partenariats, teams, organisateurs.</p>
+          <p class="muted">For media access, partnerships, teams, and organizers.</p>
         </div>
 
         <div class="cols">
           <div class="panel">
-            <h3>Coordonnées</h3>
+            <h3>Email</h3>
             <p class="muted">
-              Email : <a href="mailto:contact@paddockmedia.be">contact@paddockmedia.be</a><br/>
-              Base : Belgique<br/>
-              Disponibilité : week-ends + soirées (à adapter)
-            </p>
-
-            <h3>Formulaire (optionnel)</h3>
-            <p class="muted small">
-              Pour recevoir des messages via un formulaire, utilise un service comme Formspree (gratuit).
-              Voir les instructions dans <code>README.md</code>.
+              <a href="mailto:contact@paddockmedia.be">contact@paddockmedia.be</a><br />
+              Based in Belgium
             </p>
 
             <div class="actions">
-              <a class="btn" href="mailto:contact@paddockmedia.be?subject=Accr%C3%A9ditation%20m%C3%A9dia%20%E2%80%94%20Paddock%20Media">Écrire un email</a>
-              <a class="btn btn--ghost" href="#portfolio">Voir le portfolio</a>
+              <a class="btn" href="mailto:contact@paddockmedia.be?subject=Media%20access%20request%20%E2%80%94%20Paddock%20Media">Email me</a>
+              <a class="btn btn--ghost" href="#portfolio">Portfolio</a>
             </div>
+
+            <p class="muted small" style="margin-top:12px">
+              Optional: if you want a contact form later, we can add Formspree in 2 minutes.
+            </p>
           </div>
 
           <div class="panel">
-            <h3>FAQ rapide</h3>
-            <details>
-              <summary>Tu fais photo, vidéo, ou les deux ?</summary>
-              <p>Les deux. Je peux livrer un set photo + un montage court vertical/horizontal selon besoin.</p>
-            </details>
-            <details>
-              <summary>Tu peux fournir des images aux teams ?</summary>
-              <p>Oui : livraison en HD + formats réseaux, avec accord d’usage clair.</p>
-            </details>
-            <details>
-              <summary>Sécurité sur piste ?</summary>
-              <p>Respect strict des zones médias, commissaires, briefings, et règles circuit/rallye.</p>
-            </details>
+            <h3>Safety</h3>
+            <p class="muted">
+              I respect all safety instructions: marshal directions, media zones, and track/rally regulations.
+            </p>
           </div>
         </div>
       </div>
@@ -268,11 +302,11 @@ contact@paddockmedia.be</code></pre>
           <span class="brand__mark" aria-hidden="true">PM</span>
           <span class="brand__name">Paddock Media</span>
         </div>
-        <p class="muted small">© <span id="year"></span> Paddock Media — Belgique</p>
+        <p class="muted small">© <span id="year"></span> Paddock Media — Belgium</p>
       </div>
 
       <div class="footer__right">
-        <a href="#top" class="muted small">Haut de page</a>
+        <a href="#top" class="muted small">Back to top</a>
         <a href="sitemap.xml" class="muted small">Sitemap</a>
         <a href="robots.txt" class="muted small">Robots</a>
       </div>
@@ -280,7 +314,7 @@ contact@paddockmedia.be</code></pre>
   </footer>
 
   <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lightbox__close" id="lbClose" aria-label="Fermer">×</button>
+    <button class="lightbox__close" id="lbClose" aria-label="Close">×</button>
     <img id="lbImg" alt="" />
     <p id="lbCap" class="muted"></p>
   </div>
