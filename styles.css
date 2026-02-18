@@ -315,4 +315,9 @@ h3{margin:0 0 10px}
     height: 48px;
   }
 }
+.brand__link {
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
 
