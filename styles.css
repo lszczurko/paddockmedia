@@ -296,7 +296,23 @@ h3{margin:0 0 10px}
 
 /* Mobile */
 @media (max-width: 640px) {
+.logo {
+  height: 64px;      /* taille desktop */
+  width: auto;
+  display: block;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
   .logo {
-    height: 30px;
+    height: 56px;
   }
 }
+
+/* Mobile */
+@media (max-width: 640px) {
+  .logo {
+    height: 48px;
+  }
+}
+
